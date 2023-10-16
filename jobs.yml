@@ -13,7 +13,7 @@
         url: "{{jenkins_url}}"
         user: "{{jenkins_user}}"
       vars:
-      repo_name: frontend
+        repo_name: frontend
 
     - name: create jenkins jobs - Backend
       community.general.jenkins_job:
@@ -23,7 +23,7 @@
         url: "{{jenkins_url}}"
         user: "{{jenkins_user}}"
       vars:
-      repo_name: backend
+        repo_name: backend
 
     - name: create jenkins jobs - Expense Parameters
       community.general.jenkins_job:
@@ -33,7 +33,7 @@
         url: "{{jenkins_url}}"
         user: "{{jenkins_user}}"
       vars:
-      repo_name: parameter-store
+        repo_name: parameter-store
 
     - name: create jenkins jobs - Expense Terraform
       community.general.jenkins_job:
@@ -43,4 +43,4 @@
         url: "{{jenkins_url}}"
         user: "{{jenkins_user}}"
       vars:
-      repo_name: expense-terraform
+        repo_name: expense-terraform
