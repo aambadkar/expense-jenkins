@@ -49,3 +49,4 @@
       vars:
         repo_name: expense-terraform
         auto_trigger: "false"
+
